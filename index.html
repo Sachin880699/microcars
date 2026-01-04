@@ -2,32 +2,168 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>microcars.in</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Optional: Bootstrap (not required, but included) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroCars Showcase</title>
     <style>
+        /* Global styles */
         body {
-            height: 100vh;
             margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #ffffff;
+            background-color: #f5f5f5;
+            color: #333;
         }
-        h1 {
-            font-size: 3rem;
-            font-weight: 600;
-            letter-spacing: 2px;
+
+        header {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        /* Container for cars */
+        .car-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Individual car card */
+        .car {
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .car:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .car img {
+            width: 100%;
+            display: block;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .car-content {
+            padding: 1rem;
+        }
+
+        .car-content h2 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.25rem;
+            color: #111;
+        }
+
+        .car-content p {
+            margin: 0;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        /* Responsive heading */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Optional: slider navigation for future JS */
+        .slider-nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .slider-nav button {
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.25rem;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        .slider-nav button:hover {
+            background-color: #555;
         }
     </style>
 </head>
 <body>
 
-    <h1>microcars.in</h1>
+    <!-- Page Header -->
+    <header>
+        <h1>MicroCars Showcase</h1>
+        <p>Discover the most innovative and compact microcars</p>
+    </header>
+
+    <!-- Container for car cards -->
+    <div class="car-container">
+
+        <!-- Audi Pop-Up Next -->
+        <div class="car">
+            <img src="https://cdn.motor1.com/images/mgl/6x5bP/s3/audi-pop-up-next-concept.jpg" alt="Audi Pop-Up Next">
+            <div class="car-content">
+                <h2>Audi Pop-Up Next</h2>
+                <p>The Audi Pop-Up Next is a futuristic urban microcar concept with a compact, flexible design and sustainable mobility in mind.</p>
+            </div>
+        </div>
+
+        <!-- Smart Vision EQ -->
+        <div class="car">
+            <img src="https://cdn.motor1.com/images/mgl/0x3mR/s3/smart-vision-eq-concept.jpg" alt="Smart Vision EQ">
+            <div class="car-content">
+                <h2>Smart Vision EQ</h2>
+                <p>The Smart Vision EQ is an autonomous electric microcar concept that emphasizes minimalism, efficiency, and smart city driving solutions.</p>
+            </div>
+        </div>
+
+        <!-- Smart Fortwo -->
+        <div class="car">
+            <img src="https://cdn.motor1.com/images/mgl/9xY6O/s3/smart-fortwo.jpg" alt="Smart Fortwo">
+            <div class="car-content">
+                <h2>Smart Fortwo</h2>
+                <p>The iconic Smart Fortwo is a compact city car that delivers convenience, easy parking, and agile urban mobility in a tiny package.</p>
+            </div>
+        </div>
+
+        <!-- XEV Yoyo -->
+        <div class="car">
+            <img src="https://cdn.motor1.com/images/mgl/1o3vX/s3/xev-yoyo.jpg" alt="XEV Yoyo">
+            <div class="car-content">
+                <h2>XEV Yoyo</h2>
+                <p>The XEV Yoyo is an innovative 3D-printed micro electric car with modularity and affordability as its core design principles.</p>
+            </div>
+        </div>
+
+        <!-- Additional microcar -->
+        <div class="car">
+            <img src="https://cdn.motor1.com/images/mgl/9nZkK/s3/microlino-2-0.jpg" alt="Microlino 2.0">
+            <div class="car-content">
+                <h2>Microlino 2.0</h2>
+                <p>The Microlino 2.0 is a modern electric microcar inspired by classic bubble cars, combining style, efficiency, and urban practicality.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional: JS Slider (future enhancement) -->
+    <script>
+        // Placeholder for future JavaScript functionality
+        // Example: image slider, modal popups, or interactive filters
+        console.log("MicroCars page loaded. Add JS enhancements here.");
+    </script>
 
 </body>
 </html>
