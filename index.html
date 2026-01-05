@@ -4,49 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MicroCars Showcase</title>
+
     <style>
-        /* Global styles */
+        /* ================= Global Styles ================= */
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f5f5f5;
             color: #333;
         }
-        /* Carousel styles */
-.carousel {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-    background-color: #000;
-}
 
-.carousel-track {
-    display: flex;
-    width: 300%;
-    animation: slide 12s infinite;
-}
+        /* ================= Slider Wrapper ================= */
+        .slider-wrapper {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
 
-.carousel-track img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
+        .slider {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 14px;
+            background-color: #000;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        }
 
-/* Sliding animation */
-@keyframes slide {
-    0% { transform: translateX(0); }
-    33% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
-}
+        .slider-track {
+            display: flex;
+            transition: transform 0.6s ease-in-out;
+        }
 
+        .slider-track img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
 
-       
+        /* ================= Slider Buttons ================= */
+        .slider-controls {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
 
-        
+        .slider-controls button {
+            background-color: rgba(0,0,0,0.7);
+            color: #fff;
+            border: none;
+            padding: 8px 14px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+        }
 
-        /* Container for cars */
+        .slider-controls button:hover {
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        /* ================= Car Cards ================= */
         .car-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -56,7 +76,6 @@
             margin: 0 auto;
         }
 
-        /* Individual car card */
         .car {
             background-color: #fff;
             border-radius: 12px;
@@ -72,7 +91,6 @@
 
         .car img {
             width: 100%;
-            display: block;
             height: 180px;
             object-fit: cover;
         }
@@ -82,9 +100,8 @@
         }
 
         .car-content h2 {
-            margin: 0 0 0.5rem 0;
+            margin: 0 0 0.5rem;
             font-size: 1.25rem;
-            color: #111;
         }
 
         .car-content p {
@@ -92,101 +109,89 @@
             font-size: 0.95rem;
             line-height: 1.4;
         }
-
-        /* Responsive heading */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.5rem;
-            }
-        }
-
-        /* Optional: slider navigation for future JS */
-        .slider-nav {
-            text-align: center;
-            margin: 1rem 0;
-        }
-
-        .slider-nav button {
-            background-color: #222;
-            color: #fff;
-            border: none;
-            padding: 0.5rem 1rem;
-            margin: 0 0.25rem;
-            cursor: pointer;
-            border-radius: 6px;
-        }
-
-        .slider-nav button:hover {
-            background-color: #555;
-        }
     </style>
 </head>
+
 <body>
 
-    <!-- Page Header -->
-<div class="carousel">
-    <div class="carousel-track">
-        <img src="https://iot-automotive.news/wp-content/uploads/2020/09/AUDI_POP_UP_NEXT.jpg" alt="Audi Pop-Up Next">
-        <img src="https://wieck-mbusa-production.s3.amazonaws.com/photos/3909643f069a60273331d48846c5d1181689b4ec/preview-928x522.jpg" alt="Smart Vision EQ">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/2016_Smart_Fortwo_Passion_Automatic_1.0_Front.jpg/960px-2016_Smart_Fortwo_Passion_Automatic_1.0_Front.jpg" alt="Smart Fortwo">
+    <!-- ================= Image Slider ================= -->
+    <div class="slider-wrapper">
+        <div class="slider">
+            <div class="slider-track" id="sliderTrack">
+                <img src="https://iot-automotive.news/wp-content/uploads/2020/09/AUDI_POP_UP_NEXT.jpg">
+                <img src="https://wieck-mbusa-production.s3.amazonaws.com/photos/3909643f069a60273331d48846c5d1181689b4ec/preview-928x522.jpg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/2016_Smart_Fortwo_Passion_Automatic_1.0_Front.jpg/960px-2016_Smart_Fortwo_Passion_Automatic_1.0_Front.jpg">
+            </div>
+
+            <div class="slider-controls">
+                <button onclick="prevSlide()">◀</button>
+                <button onclick="togglePause()" id="pauseBtn">⏸</button>
+                <button onclick="nextSlide()">▶</button>
+            </div>
+        </div>
     </div>
-</div>
 
-    <!-- Container for car cards -->
+    <!-- ================= MicroCars Cards ================= -->
     <div class="car-container">
-
-        <!-- Audi Pop-Up Next -->
         <div class="car">
             <img src="https://iot-automotive.news/wp-content/uploads/2020/09/AUDI_POP_UP_NEXT.jpg">
             <div class="car-content">
                 <h2>Audi Pop-Up Next</h2>
-                <p>The Audi Pop-Up Next is a futuristic urban microcar concept with a compact, flexible design and sustainable mobility in mind.</p>
+                <p>Futuristic microcar concept designed for sustainable urban mobility.</p>
             </div>
         </div>
 
-        <!-- Smart Vision EQ -->
         <div class="car">
-            <img src="https://wieck-mbusa-production.s3.amazonaws.com/photos/3909643f069a60273331d48846c5d1181689b4ec/preview-928x522.jpg" alt="Smart Vision EQ">
+            <img src="https://wieck-mbusa-production.s3.amazonaws.com/photos/3909643f069a60273331d48846c5d1181689b4ec/preview-928x522.jpg">
             <div class="car-content">
                 <h2>Smart Vision EQ</h2>
-                <p>The Smart Vision EQ is an autonomous electric microcar concept that emphasizes minimalism, efficiency, and smart city driving solutions.</p>
+                <p>Autonomous electric microcar built for smart cities.</p>
             </div>
         </div>
 
-        <!-- Smart Fortwo -->
         <div class="car">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/2016_Smart_Fortwo_Passion_Automatic_1.0_Front.jpg/960px-2016_Smart_Fortwo_Passion_Automatic_1.0_Front.jpg" alt="Smart Fortwo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/2016_Smart_Fortwo_Passion_Automatic_1.0_Front.jpg/960px-2016_Smart_Fortwo_Passion_Automatic_1.0_Front.jpg">
             <div class="car-content">
                 <h2>Smart Fortwo</h2>
-                <p>The iconic Smart Fortwo is a compact city car that delivers convenience, easy parking, and agile urban mobility in a tiny package.</p>
+                <p>Compact and efficient city car with excellent maneuverability.</p>
             </div>
         </div>
-
-        <!-- XEV Yoyo -->
-        <div class="car">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/XEV_Yoyo_IAA_2021_1X7A0240.jpg/960px-XEV_Yoyo_IAA_2021_1X7A0240.jpg" alt="XEV Yoyo">
-            <div class="car-content">
-                <h2>XEV Yoyo</h2>
-                <p>The XEV Yoyo is an innovative 3D-printed micro electric car with modularity and affordability as its core design principles.</p>
-            </div>
-        </div>
-
-        <!-- Additional microcar -->
-        <div class="car">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/XEV_Yoyo_IAA_2021_1X7A0240.jpg/960px-XEV_Yoyo_IAA_2021_1X7A0240.jpg" alt="Microlino 2.0">
-            <div class="car-content">
-                <h2>Microlino 2.0</h2>
-                <p>The Microlino 2.0 is a modern electric microcar inspired by classic bubble cars, combining style, efficiency, and urban practicality.</p>
-            </div>
-        </div>
-
     </div>
 
-    <!-- Optional: JS Slider (future enhancement) -->
+    <!-- ================= JavaScript ================= -->
     <script>
-        // Placeholder for future JavaScript functionality
-        // Example: image slider, modal popups, or interactive filters
-        console.log("MicroCars page loaded. Add JS enhancements here.");
+        const track = document.getElementById("sliderTrack");
+        const slides = track.children;
+        const pauseBtn = document.getElementById("pauseBtn");
+
+        let index = 0;
+        let isPaused = false;
+        const totalSlides = slides.length;
+
+        function updateSlide() {
+            track.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextSlide() {
+            index = (index + 1) % totalSlides;
+            updateSlide();
+        }
+
+        function prevSlide() {
+            index = (index - 1 + totalSlides) % totalSlides;
+            updateSlide();
+        }
+
+        function togglePause() {
+            isPaused = !isPaused;
+            pauseBtn.textContent = isPaused ? "▶" : "⏸";
+        }
+
+        setInterval(() => {
+            if (!isPaused) {
+                nextSlide();
+            }
+        }, 4000);
     </script>
 
 </body>
