@@ -10,8 +10,51 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
+            background-color: #f8fafc;
+            color: #1f2937;
+        }
+
+        /* ================= Navbar ================= */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 28px;
+            background-color: #0f172a;
+            color: #e5e7eb;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .logo {
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .nav-center {
+            list-style: none;
+            display: flex;
+            gap: 32px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-center li a {
+            text-decoration: none;
+            color: #e5e7eb;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .nav-center li a:hover {
+            color: #38bdf8;
+        }
+
+        .profile-icon {
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid #38bdf8;
         }
 
         /* ================= Slider Wrapper ================= */
@@ -27,7 +70,7 @@
             overflow: hidden;
             border-radius: 14px;
             background-color: #000;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.18);
         }
 
         .slider-track {
@@ -45,25 +88,27 @@
         /* ================= Slider Buttons ================= */
         .slider-controls {
             position: absolute;
-            bottom: 15px;
+            bottom: 16px;
             left: 50%;
             transform: translateX(-50%);
             display: flex;
-            gap: 10px;
+            gap: 12px;
         }
 
         .slider-controls button {
-            background-color: rgba(0,0,0,0.7);
-            color: #fff;
+            background-color: rgba(15, 23, 42, 0.85);
+            color: #e5e7eb;
             border: none;
             padding: 8px 14px;
             font-size: 16px;
             cursor: pointer;
             border-radius: 6px;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         .slider-controls button:hover {
-            background-color: rgba(0,0,0,0.9);
+            background-color: #38bdf8;
+            color: #0f172a;
         }
 
         /* ================= Car Cards ================= */
@@ -77,16 +122,16 @@
         }
 
         .car {
-            background-color: #fff;
-            border-radius: 12px;
+            background-color: #ffffff;
+            border-radius: 14px;
             overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .car:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transform: translateY(-6px);
+            box-shadow: 0 14px 30px rgba(0,0,0,0.15);
         }
 
         .car img {
@@ -102,17 +147,35 @@
         .car-content h2 {
             margin: 0 0 0.5rem;
             font-size: 1.25rem;
+            color: #0f172a;
         }
 
         .car-content p {
             margin: 0;
             font-size: 0.95rem;
             line-height: 1.4;
+            color: #475569;
         }
     </style>
 </head>
 
 <body>
+
+    <!-- ================= Navbar ================= -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" class="logo">
+        </div>
+
+        <ul class="nav-center">
+            <li><a href="#">EV</a></li>
+            <li><a href="#">Concept</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" class="profile-icon">
+        </div>
+    </nav>
 
     <!-- ================= Image Slider ================= -->
     <div class="slider-wrapper">
