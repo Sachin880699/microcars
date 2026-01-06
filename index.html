@@ -5,166 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MicroCars Showcase</title>
 
-    <style>
-        /* ================= Global Styles ================= */
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f8fafc;
-            color: #1f2937;
-        }
-
-        /* ================= Navbar ================= */
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 14px 28px;
-            background-color: #0f172a;
-            color: #e5e7eb;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        .logo {
-            height: 40px;
-            cursor: pointer;
-        }
-
-        .nav-center {
-            list-style: none;
-            display: flex;
-            gap: 32px;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav-center li a {
-            text-decoration: none;
-            color: #e5e7eb;
-            font-size: 16px;
-            font-weight: 500;
-        }
-
-        .nav-center li a:hover {
-            color: #38bdf8;
-        }
-
-        .profile-icon {
-            height: 36px;
-            width: 36px;
-            border-radius: 50%;
-            cursor: pointer;
-            border: 2px solid #38bdf8;
-        }
-
-        /* ================= Slider Wrapper ================= */
-        .slider-wrapper {
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        .slider {
-            position: relative;
-            height: 300px;
-            overflow: hidden;
-            border-radius: 14px;
-            background-color: #000;
-            box-shadow: 0 10px 24px rgba(0,0,0,0.18);
-        }
-
-        .slider-track {
-            display: flex;
-            transition: transform 0.6s ease-in-out;
-        }
-
-        .slider-track img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            flex-shrink: 0;
-        }
-
-        /* ================= Slider Buttons ================= */
-        .slider-controls {
-            position: absolute;
-            bottom: 16px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 12px;
-        }
-
-        .slider-controls button {
-            background-color: rgba(15, 23, 42, 0.85);
-            color: #e5e7eb;
-            border: none;
-            padding: 8px 14px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 6px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .slider-controls button:hover {
-            background-color: #38bdf8;
-            color: #0f172a;
-        }
-
-        /* ================= Car Cards ================= */
-        .car-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .car {
-            background-color: #ffffff;
-            border-radius: 14px;
-            overflow: hidden;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .car:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 14px 30px rgba(0,0,0,0.15);
-        }
-
-        .car img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .car-content {
-            padding: 1rem;
-        }
-
-        .car-content h2 {
-            margin: 0 0 0.5rem;
-            font-size: 1.25rem;
-            color: #0f172a;
-        }
-
-        .car-content p {
-            margin: 0;
-            font-size: 0.95rem;
-            line-height: 1.4;
-            color: #475569;
-        }
-    </style>
+   <link rel="stylesheet" href="css/details.css">
+   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <!-- ================= Navbar ================= -->
     <nav class="navbar">
+
         <div class="nav-left">
+            <a href="/">
             <img src="https://e7.pngegg.com/pngimages/359/743/png-clipart-logo-community-text-logo.png" class="logo">
+            </a>
         </div>
 
         <ul class="nav-center">
@@ -196,13 +49,16 @@
 
     <!-- ================= MicroCars Cards ================= -->
     <div class="car-container">
+        <a href="details/audi_pop_up_next_details.html">
         <div class="car">
             <img src="https://iot-automotive.news/wp-content/uploads/2020/09/AUDI_POP_UP_NEXT.jpg">
             <div class="car-content">
                 <h2>Audi Pop-Up Next</h2>
                 <p>Futuristic microcar concept designed for sustainable urban mobility.</p>
+                
             </div>
         </div>
+        </a>
 
         <div class="car">
             <img src="https://wieck-mbusa-production.s3.amazonaws.com/photos/3909643f069a60273331d48846c5d1181689b4ec/preview-928x522.jpg">
