@@ -6,55 +6,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- SEO Meta Tags -->
-    <title>Micro Cars, Electric City Cars & Compact Vehicles - MicroCars.in</title>
-    <meta name="description" content="MicroCars.in is your ultimate guide to micro cars, electric city cars, and futuristic compact vehicles. Explore reviews, specifications, and latest updates on micro cars in India.">
-    <meta name="keywords" content="micro car, electric micro car, compact car, small city car, micro cars in India, Audi Pop.Up Next, XEV YoYo, MG Comet, Smart Vision EQ">
-    <meta name="author" content="MicroCars.in">
-
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "MicroCars.in",
-      "url": "https://www.microcars.in",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.microcars.in/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+
+    <title>Home - Darisset</title>
 </head>
 
 <body>
 
-    <!-- Navbar -->
+    <!-- navbar -->
     <nav class="nav" id="nav">
         <div class="nav-center">
             <!-- nav header -->
             <div class="nav-header">
-                <img src="./img/logo11.png" class="nav-logo" alt="MicroCars.in Logo" />
+                <img src="./img/logo11.png" class="nav-logo" alt="" />
                 <button class="nav-btn" id="nav-btn">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
             <!-- nav links -->
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
                 <div class="dropdown">
                     <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
                         aria-expanded="false">
                         Blog
                     </a>
+
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <li><a class="dropdown-item" href="blog.html">Blog</a></li>
                         <li><a class="dropdown-item" href="category.html">Category</a></li>
@@ -66,16 +48,72 @@
                         aria-expanded="false">
                         User
                     </a>
+
                     <ul class="dropdown-menu" aria-labelledby="UserDropdown">
                         <li><a class="dropdown-item" href="user.html">User</a></li>
-                        <li><a class="dropdown-item" href="login.html">Login</a></li>
-                        <li><a class="dropdown-item" href="register.html">Register</a></li>
+                        <li><a class="dropdown-item" href="login.html">login</a></li>
+                        <li><a class="dropdown-item" href="register.html">regster</a></li>
                     </ul>
                 </div>
             </ul>
         </div>
     </nav>
-    <!-- End Navbar -->
+
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div>
+            <button id="close-btn" class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="sidebar-links">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="detail.html">Detail</a></li>
+                <li><a href="user.html">user</a></li>
+            </ul>
+            <ul class="social-icons">
+                <!-- single item -->
+                <li class="pr-3">
+                    <a href="https://www.twitter.com" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <!-- end of single item -->
+                <!-- single item -->
+                <li>
+                    <a href="https://www.twitter.com" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <!-- end of single item -->
+                <!-- single item -->
+                <li>
+                    <a href="https://www.twitter.com" class="social-icon">
+                        <i class="fab fa-squarespace"></i>
+                    </a>
+                </li>
+                <!-- end of single item -->
+                <!-- single item -->
+                <li>
+                    <a href="https://www.twitter.com" class="social-icon">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </li>
+                <!-- end of single item -->
+                <!-- single item -->
+                <li>
+                    <a href="https://www.twitter.com" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <!-- end of single item -->
+            </ul>
+        </div>
+    </aside>
+    <!-- end of sidebar -->
 
     <!-- Banner -->
     <div class="banner">
@@ -97,155 +135,441 @@
             </div>
         </div>
     </div>
-    <!-- End Banner -->
+    <!-- end banner -->
 
-    <!-- Trending Micro Cars -->
-    <section class="popular-post">
+    <!-- popular post -->
+    <div class="popular-post">
         <div class="container">
-            <div class="section-title">
-                <h1>Trending Micro Cars</h1>
-                <div class="underline"></div>
-            </div>
-            <div class="section-center projects-center">
-                <!-- Audi Pop Up Next -->
-                <a href="./details_pages/audi_pop_up_next.html" class="project-1">
-                    <article class="project">
-                        <img src="./img/cars/AUDI_POP_UP_NEXT.jpg" alt="Audi Pop.Up Next Electric Micro Car" class="project-img" />
-                        <div class="project-info">
-                            <h2>Audi Pop Up Next</h2>
-                            <p>Click to view details</p>
+            <!-- popular post -->
+            <section class="section projects">
+                <!-- section title -->
+                <div class="section-title">
+                    <h2>Trending Cars</h2>
+                    <div class="underline"></div>
+                </div>
+                <!-- end of section title -->
+                <div class="section-center projects-center">
+                    <!-- single post -->
+                    <a href="./details_pages/audi_pop_up_next.html" class="project-1">
+                        <article class="project">
+                            <img src="./img/cars/AUDI_POP_UP_NEXT.jpg" alt="" class="project-img" />
+                            <div class="project-info">
+                                <h4>Audi Pop Up Next</h4>
+                                <p>Click</p>
+                            </div>
+                        </article>
+                    </a>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <a href="detail.html" class="project-2">
+                        <article class="project">
+                            <img src="./img/cars/xev_yoyo.png" alt="" class="project-img" />
+                            <div class="project-info">
+                                <h4>Xev YoYo</h4>
+                                <p>Click</p>
+                            </div>
+                        </article>
+                    </a>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <a href="./details_pages/smart_vision_eq_details.html" class="project-3">
+                        <article class="project">
+                            <img src="./img/cars/smart_vision_eq.jpg" alt="" class="project-img" />
+                            <div class="project-info">
+                                <h4>Smart Vision EQ</h4>
+                                <p>Click</p>
+                            </div>
+                        </article>
+                    </a>
+                    <!-- end of single project -->
+                    <!-- single project -->
+                    <a href="detail.html" class="project-4">
+                        <article class="project">
+                            <img src="./img/cars/mg_comet.avif" alt="" class="project-img" />
+                            <div class="project-info">
+                                <h4>MG Comet</h4>
+                                <p>Click</p>
+                            </div>
+                        </article>
+                    </a>
+                    <!-- end of single project -->
+                </div>
+            </section>
+            <!-- endo of projects -->
+        </div>
+    </div>
+    <!-- popular post -->
+
+   
+
+    <!-- Blog -->
+    <div class="blog">
+        <div class="container ">
+            <div class="row">
+                <div class="section-title mt-5">
+                    <h2>All Post</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class=" mb-5">
+                    <!-- featured blogs -->
+                    <section class="section" id="featured">
+                        <!-- featured-center -->
+                        <div class="section-center featured-center ">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-6">
+                                    <!-- single blog -->
+                                    <article class="blog-card">
+                                        <div class="blog-img-container">
+                                            <a href="./details_pages/audi_pop_up_next.html"><img src="./img/cars/AUDI_POP_UP_NEXT.jpg" class="blog-img" alt="" /></a>
+                                            <p class="blog-date">March 18th, 2018</p>
+                                        </div>
+                                        <!-- blog info -->
+                                        <div class="blog-info">
+                                            <div class="blog-title">
+                                                <a href="detail.html">
+                                                    <h4>Audi pop up next</h4>
+                                                </a>
+                                                
+                                            </div>
+                                            <p>
+                                                The Audi Pop.Up Next is a futuristic, all-electric autonomous concept unveiled at the 2018 Geneva Motor Show, showcasing a modular system that combines driving and flying for future urban mobility.
+                                            </p>
+                                            <!-- blog footer -->
+                                            <div class="blog-footer">
+                                                <a href="">
+                                                    <p>
+                                                        <span><i class="fas fa-eye"></i></span> 236
+                                                    </p>
+                                                </a>
+                                                <a href="details_pages/audi_pop_up_next.html">
+                                                    <p>Read More...</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <!-- end of single blog -->
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- single blog -->
+                                    <article class="blog-card">
+                                        <div class="blog-img-container">
+                                            <a href="./details_pages/smart_vision_eq_details.html"><img src="./img/cars/smart_vision_eq.jpg" class="blog-img" alt="" /></a>
+                                            <p class="blog-date">September 26th, 2017</p>
+                                        </div>
+                                        <!-- blog info -->
+                                        <div class="blog-info">
+                                            <div class="blog-title">
+                                                <a href="./details_pages/smart_vision_eq_details.html">
+                                                    <h4>Smart Vision EQ</h4>
+                                                </a>
+                                                
+                                            </div>
+                                            <p>
+                                                The Smart Vision EQ Fortwo is a futuristic, fully electric and autonomous concept city car revealed to showcase Smart’s vision for future urban mobility, focusing on connected, self-driving technology and car-sharing solutions.
+                                            </p>
+                                            <!-- blog footer -->
+                                            <div class="blog-footer">
+                                                <a href="">
+                                                    <p>
+                                                        <span><i class="fas fa-eye"></i></span> 245
+                                                    </p>
+                                                </a>
+                                                <a href="./details_pages/smart_vision_eq_details.html">
+                                                    <p>Read More...</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <!-- end of single blog -->
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- single blog -->
+                                    <article class="blog-card">
+                                        <div class="blog-img-container">
+                                            <a href="./details_pages/xev_yoyo_details.html"><img src="./img/cars/xev_yoyo.png" class="blog-img" alt="" /></a>
+                                            <p class="blog-date">September 26th, 2021</p>
+                                        </div>
+                                        <!-- blog info -->
+                                        <div class="blog-info">
+                                            <div class="blog-title">
+                                                <a href="./details_pages/xev_yoyo_details.html">
+                                                    <h4>XEV YoYo</h4>
+                                                </a>
+                                                
+                                            </div>
+                                            <p>
+                                                The XEV Yoyo is a compact, fully electric city car built for urban mobility, featuring a lightweight body made using 3D-printing technology.
+It uses swappable batteries, making it practical for short city commutes.
+                                            </p>
+                                            <!-- blog footer -->
+                                            <div class="blog-footer">
+                                                <a href="">
+                                                    <p>
+                                                        <span><i class="fas fa-eye"></i></span> 201
+                                                    </p>
+                                                </a>
+                                                <a href="./details_pages/xev_yoyo_details.html">
+                                                    <p>Read More...</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <!-- end of single blog -->
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- single blog -->
+                                    <article class="blog-card">
+                                        <div class="blog-img-container">
+                                            <a href="#"><img src="./img/cars/mg_comet.avif" class="blog-img" alt="" /></a>
+                                            <p class="blog-date">august 26th, 2020</p>
+                                        </div>
+                                        <!-- blog info -->
+                                        <div class="blog-info">
+                                            <div class="blog-title">
+                                                <a href="detail.html">
+                                                    <h4>MG Comet</h4>
+                                                </a>
+                                            </div>
+                                            <p>
+                                                The MG Comet EV is a compact, fully electric city car designed for urban commuting with a ’Big Inside, Compact Outside’ layout that maximizes interior space in a small footprint.
+                                            </p>
+                                            <!-- blog footer -->
+                                            <div class="blog-footer">
+                                                <a href="">
+                                                    <p>
+                                                        <span><i class="fas fa-eye"></i></span> 9874
+                                                    </p>
+                                                </a>
+                                                <a href="detail.html">
+                                                    <p>Read More...</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <!-- end of single blog -->
+                                </div>
+
+                            </div>
                         </div>
-                    </article>
-                </a>
-                <!-- XEV YoYo -->
-                <a href="detail.html" class="project-2">
-                    <article class="project">
-                        <img src="./img/cars/xev_yoyo.png" alt="XEV YoYo Compact Electric City Car" class="project-img" />
-                        <div class="project-info">
-                            <h2>XEV YoYo</h2>
-                            <p>Click to view details</p>
+                        <!-- end of blogs center -->
+                        <div class="blog-btn mt-5">
+                            <a href="blog.html" class="btn">all post</a>
                         </div>
-                    </article>
-                </a>
-                <!-- Smart Vision EQ -->
-                <a href="detail.html" class="project-3">
-                    <article class="project">
-                        <img src="./img/cars/smart_vision_eq.jpg" alt="Smart Vision EQ Futuristic Micro Car" class="project-img" />
-                        <div class="project-info">
-                            <h2>Smart Vision EQ</h2>
-                            <p>Click to view details</p>
-                        </div>
-                    </article>
-                </a>
-                <!-- MG Comet -->
-                <a href="detail.html" class="project-4">
-                    <article class="project">
-                        <img src="./img/cars/mg_comet.avif" alt="MG Comet Electric Micro Car India" class="project-img" />
-                        <div class="project-info">
-                            <h2>MG Comet</h2>
-                            <p>Click to view details</p>
-                        </div>
-                    </article>
-                </a>
+                    </section>
+                    <!-- end of featured blogs -->
+                </div>
             </div>
         </div>
-    </section>
-    <!-- End Trending Micro Cars -->
+    </div>
+    <!-- end blog -->
 
-    <!-- Blog Section -->
-    <section class="blog">
-        <div class="container">
-            <div class="section-title mt-5">
-                <h2>Latest Micro Car Posts</h2>
-                <div class="underline"></div>
+    <div class="container mb-5">
+        <div class="section-title mt-5">
+            <h2>Recent Posts</h2>
+            <div class="underline"></div>
+        </div>
+        <section class="section" id="featured">
+            <!-- featured-center -->
+            <div class="section-center featured-center ">
+                <div class="row justify-content-start">
+                    <div class="col-lg-6">
+                        <!-- single blog -->
+                        <article class="blog-card">
+                            <!-- blog info -->
+                            <div class="blog-info">
+                                <div class="blog-title">
+                                    <a href="detail.html">
+                                        <h4>Tibet Lorem ?</h4>
+                                    </a>
+                                    <a href="category.html">
+                                        <p>Education</p>
+                                    </a>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+                                    vitae tempore voluptatum maxime reprehenderit eum quod
+                                    exercitationem fugit, qui corporis.
+                                </p>
+                                <!-- blog footer -->
+                                <div class="blog-footer">
+                                    <a href="">
+                                        <p>
+                                            <span><i class="fas fa-user"></i></span> Darisset
+                                        </p>
+                                    </a>
+                                    <a href="detail.html">
+                                        <p>Read More...</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- end of single blog -->
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- single blog -->
+                        <article class="blog-card">
+                            <!-- blog info -->
+                            <div class="blog-info">
+                                <div class="blog-title">
+                                    <a href="detail.html">
+                                        <h4>Tibet Adventure</h4>
+                                    </a>
+                                    <a href="category.html">
+                                        <p>Life Style</p>
+                                    </a>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+                                    vitae tempore voluptatum maxime reprehenderit eum quod
+                                    exercitationem fugit, qui corporis.
+                                </p>
+                                <!-- blog footer -->
+                                <div class="blog-footer">
+                                    <a href="">
+                                        <p>
+                                            <span><i class="fas fa-user"></i></span> Darisset
+                                        </p>
+                                    </a>
+                                    <a href="detail.html">
+                                        <p>Read More...</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- end of single blog -->
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- single blog -->
+                        <article class="blog-card">
+                            <!-- blog info -->
+                            <div class="blog-info">
+                                <div class="blog-title">
+                                    <a href="detail.html">
+                                        <h4>Tibet Adventure</h4>
+                                    </a>
+                                    <a href="category.html">
+                                        <p>Journal</p>
+                                    </a>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+                                    vitae tempore voluptatum maxime reprehenderit eum quod
+                                    exercitationem fugit, qui corporis.
+                                </p>
+                                <!-- blog footer -->
+                                <div class="blog-footer">
+                                    <a href="">
+                                        <p>
+                                            <span><i class="fas fa-user"></i></span> Darisset
+                                        </p>
+                                    </a>
+                                    <a href="detail.html">
+                                        <p>Read More...</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- end of single blog detail-->
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- single blog -->
+                        <article class="blog-card">
+                            <!-- blog detail info -->
+                            <div class="blog-info">
+                                <div class="blog-title">
+                                    <a href="detail.html">
+                                        <h4>Tibet Adventure</h4>
+                                    </a>
+                                    <a href="category.html">
+                                        <p>Journal</p>
+                                    </a>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+                                    vitae tempore voluptatum maxime reprehenderit eum quod
+                                    exercitationem fugit, qui corporis.
+                                </p>
+                                <!-- detail footer -->
+                                <div class="blog-footer">
+                                    <a href="">
+                                        <p>
+                                            <span><i class="fas fa-user"></i></span> Darisset
+                                        </p>
+                                    </a>
+                                    <a href="detail.html">
+                                        <p>Read More...</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- end of single detail -->
+                    </div>
+
+                </div>
             </div>
-            <div class="section-center featured-center row">
-                <!-- Example Blog Post -->
-                <div class="col-lg-6">
-                    <article class="blog-card">
-                        <div class="blog-img-container">
-                            <a href="./details_pages/audi_pop_up_next.html">
-                                <img src="./img/cars/AUDI_POP_UP_NEXT.jpg" alt="Audi Pop.Up Next Micro Car" class="blog-img" />
-                            </a>
-                            <p class="blog-date">March 18th, 2018</p>
-                        </div>
-                        <div class="blog-info">
-                            <div class="blog-title">
-                                <a href="detail.html"><h3>Audi Pop Up Next</h3></a>
-                            </div>
-                            <p>
-                                The Audi Pop.Up Next is a futuristic, all-electric autonomous micro car concept unveiled at the 2018 Geneva Motor Show, showcasing a modular system combining road and air travel for future urban mobility.
-                            </p>
-                            <div class="blog-footer">
-                                <a href=""><p><span><i class="fas fa-eye"></i></span> 236</p></a>
-                                <a href="details_pages/audi_pop_up_next.html"><p>Read More...</p></a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-6">
-                    <article class="blog-card">
-                        <div class="blog-img-container">
-                            <a href="./details_pages/audi_pop_up_next.html">
-                                <img src="./img/cars/AUDI_POP_UP_NEXT.jpg" alt="Audi Pop.Up Next Micro Car" class="blog-img" />
-                            </a>
-                            <p class="blog-date">March 18th, 2018</p>
-                        </div>
-                        <div class="blog-info">
-                            <div class="blog-title">
-                                <a href="detail.html"><h3>Audi Pop Up Next</h3></a>
-                            </div>
-                            <p>
-                                The Audi Pop.Up Next is a futuristic, all-electric autonomous micro car concept unveiled at the 2018 Geneva Motor Show, showcasing a modular system combining road and air travel for future urban mobility.
-                            </p>
-                            <div class="blog-footer">
-                                <a href=""><p><span><i class="fas fa-eye"></i></span> 236</p></a>
-                                <a href="details_pages/audi_pop_up_next.html"><p>Read More...</p></a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-6">
-                    <article class="blog-card">
-                        <div class="blog-img-container">
-                            <a href="./details_pages/audi_pop_up_next.html">
-                                <img src="./img/cars/AUDI_POP_UP_NEXT.jpg" alt="Audi Pop.Up Next Micro Car" class="blog-img" />
-                            </a>
-                            <p class="blog-date">March 18th, 2018</p>
-                        </div>
-                        <div class="blog-info">
-                            <div class="blog-title">
-                                <a href="detail.html"><h3>Audi Pop Up Next</h3></a>
-                            </div>
-                            <p>
-                                The Audi Pop.Up Next is a futuristic, all-electric autonomous micro car concept unveiled at the 2018 Geneva Motor Show, showcasing a modular system combining road and air travel for future urban mobility.
-                            </p>
-                            <div class="blog-footer">
-                                <a href=""><p><span><i class="fas fa-eye"></i></span> 236</p></a>
-                                <a href="details_pages/audi_pop_up_next.html"><p>Read More...</p></a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <!-- Add other blog cards here with proper alt text and headings -->
+        </section>
+    </div>
+
+
+    <!-- newsletter -->
+    <section class="section newsletter" id="newsletter">
+        <div class="container section-center newsletter-center">
+            <div class="newsletter-title">
+                <h3>want latest post info and updates?</h3>
+                <p>Sign up for newsletter and stay up to date</p>
             </div>
+            <form class="newsletter-form">
+                <input type="email" class="form-control" placeholder="your email" />
+                <button type="submit" class="btn-submit">submit</button>
+            </form>
         </div>
     </section>
-    <!-- End Blog Section -->
+    <!-- end of newsletter -->
 
-    <!-- Footer -->
     <footer class="footer">
         <ul class="social-icons mt-5">
-            <li class="pr-3"><a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://www.linkedin.com" class="social-icon"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://www.squarespace.com" class="social-icon"><i class="fab fa-squarespace"></i></a></li>
-            <li><a href="https://www.behance.net" class="social-icon"><i class="fab fa-behance"></i></a></li>
-            <li><a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+            <!-- single item -->
+            <li class="pr-3">
+                <a href="https://www.twitter.com" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <!-- end of single item -->
+            <!-- single item -->
+            <li>
+                <a href="https://www.twitter.com" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <!-- end of single item -->
+            <!-- single item -->
+            <li>
+                <a href="https://www.twitter.com" class="social-icon">
+                    <i class="fab fa-squarespace"></i>
+                </a>
+            </li>
+            <!-- end of single item -->
+            <!-- single item -->
+            <li>
+                <a href="https://www.twitter.com" class="social-icon">
+                    <i class="fab fa-behance"></i>
+                </a>
+            </li>
+            <!-- end of single item -->
+            <!-- single item -->
+            <li>
+                <a href="https://www.twitter.com" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <!-- end of single item -->
         </ul>
-        <p>&copy; <span id="date"></span> MicroCars.in. All rights reserved.</p>
+
+        <p>&copy; <span id="date"></span> Darisset. All rights reserved.</p>
     </footer>
 
-    <!-- Scripts -->
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
     <script src="./js/popper.min.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
