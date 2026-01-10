@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Audi Pop Up Next",
+    "img": "./img/cars/AUDI_POP_UP_NEXT.jpg",
+    "link": "./details_pages/audi_pop_up_next.html",
+    "subtitle": "Click"
+  },
+  {
+    "title": "XEV YoYo",
+    "img": "./img/cars/xev_yoyo.png",
+    "link": "./details_pages/xev_yoyo_details.html",
+    "subtitle": "Click"
+  },
+  {
+    "title": "Smart Vision EQ",
+    "img": "./img/cars/smart_vision_eq.jpg",
+    "link": "./details_pages/smart_vision_eq_details.html",
+    "subtitle": "Click"
+  },
+  {
+    "title": "MG Comet",
+    "img": "./img/cars/mg_comet.avif",
+    "link": "detail.html",
+    "subtitle": "Click"
+  }
+]
