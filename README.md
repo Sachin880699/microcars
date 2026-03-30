@@ -1,3 +1,63 @@
+<hr>
+Here is your **50 questions list (clean, no separation):**
+
+1. Which car is best under ₹5 lakh in India?
+2. Which is the cheapest car in India right now?
+3. Which car is best for city driving in India?
+4. Which car is best for beginners in India?
+5. Which car has the lowest maintenance cost?
+6. Which car is best for daily office use?
+7. Which car is best for a small family?
+8. Which car should I buy in low budget?
+9. What is the on-road price of Maruti Suzuki Alto?
+10. What is the second-hand price of Tata Nano?
+11. What is EMI for a ₹5 lakh car?
+12. How much down payment is required for a car?
+13. Is buying a used car better than a new car?
+14. What is the cheapest car EMI in India?
+15. How to buy a car on low salary?
+16. Which car gives best mileage in India?
+17. What is real mileage of Maruti Suzuki WagonR CNG?
+18. Which car is best for fuel saving?
+19. CNG vs petrol – which is cheaper?
+20. How much fuel cost per km for small cars?
+21. Which car is best for long-term fuel savings?
+22. Which is better: Tata Nano or Maruti Suzuki Alto?
+23. Which is better: petrol or CNG car?
+24. Electric car vs petrol car – which is better?
+25. Small car vs SUV – which is better for city?
+26. New car vs used car – which is better?
+27. Which car has lowest maintenance in India?
+28. What are common problems in small cars?
+29. Is Tata Nano reliable?
+30. How often should a car be serviced?
+31. What is average service cost of small cars?
+32. Which car lasts longer in India?
+33. How to choose a car for first time buyers?
+34. What to check before buying a used car?
+35. What documents are required to buy a car?
+36. How to calculate car EMI?
+37. How to improve car mileage?
+38. How to maintain a car properly?
+39. Are micro cars the future of cities?
+40. Why are small cars better for traffic?
+41. Will micro cars come to India?
+42. Why did Tata Nano fail in India?
+43. Are electric micro cars practical in India?
+44. What are must-have car accessories?
+45. Which is best mobile holder for car?
+46. Is dash cam necessary in India?
+47. Best accessories for new car under ₹1000?
+48. How to maintain car interior?
+49. Is it worth buying a small car in 2026?
+50. Which car is best for long drive under ₹5 lakh?
+
+---
+
+If you want next step, I can convert this into:
+👉 **SEO blog titles + headings + content format (ready to publish)**
+
+
 Smart Fortwo <br>
 Smart EQ Fortwo <br>
 Renault Twizy <br>
