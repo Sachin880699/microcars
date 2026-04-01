@@ -1,8 +1,8 @@
 # 🚗 Microcars.in SEO Blog Plan (Optimized Sequence)
 
 ## 🔥 STEP 1: High Traffic (Top Priority)
-- Which is the cheapest car in India right now?
-- Which car is best for city driving in India?
+- Which is the cheapest car in India right now? = Done
+- Which car is best for city driving in India? = Done
 - Which car should I buy in low budget?
 - Which car is best for beginners in India?
 - Which car is best for a small family?
