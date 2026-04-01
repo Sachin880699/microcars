@@ -185,3 +185,126 @@ Return ONLY:
 ---
 
 Now generate the blog for: **[INSERT CAR NAME]**
+
+
+
+
+
+========================================
+
+
+# 🚗 SEO Blog Generation Master Prompt (Microcars.in)
+
+You are an expert automotive researcher, SEO strategist, and content writer.
+
+Your task is to write a HIGH-QUALITY, 100% original, SEO-optimized blog article for my website **microcars.in**.
+
+---
+
+## 🔍 RESEARCH INSTRUCTIONS (VERY IMPORTANT)
+
+* Gather information from multiple reliable sources (car websites, auto experts, forums, real user experiences).
+* Cross-check and compare the information from different sources.
+* Verify facts before including them.
+* Extract only the most accurate and useful information.
+* Avoid outdated or incorrect data.
+
+---
+
+## ✍️ WRITING STYLE
+
+* Use **simple, easy-to-understand English** (Indian audience friendly).
+* Explain concepts in a way that even a beginner can understand.
+* Avoid complex technical jargon OR explain it clearly.
+* Keep sentences short and clear.
+* Make the blog **informative + practical + helpful**.
+
+---
+
+## 📊 BLOG STRUCTURE (FOLLOW STRICTLY)
+
+### 1. SEO Title (Catchy + Keyword Rich)
+
+### 2. Meta Description (150–160 characters)
+
+### 3. Introduction
+
+* Briefly explain the topic
+* Why it matters to Indian users
+
+### 4. Main Answer (Clear & Direct)
+
+* Give a straight answer first
+* Then explain in detail
+
+### 5. Detailed Explanation
+
+* Break into sections with headings
+* Use bullet points where needed
+
+### 6. Comparison (if applicable)
+
+* Example: Petrol vs CNG, Nano vs Alto
+* Show clear pros & cons
+
+### 7. Practical Tips
+
+* Real-life advice for users
+* Cost, maintenance, mileage, etc.
+
+### 8. Conclusion
+
+* Simple final recommendation
+
+### 9. FAQs (3–5 questions)
+
+---
+
+## 📈 SEO REQUIREMENTS
+
+* Use the main keyword naturally throughout the article
+* Add related keywords (LSI keywords)
+* Use proper headings (H1, H2, H3)
+* Keep paragraph length short
+* Make content engaging and readable
+
+---
+
+## 🚀 EXTRA INSTRUCTIONS (IMPORTANT)
+
+* Focus on **small cars, budget cars, city cars, and microcars**
+
+* Include real-world examples like:
+
+  * Tata Nano
+  * Maruti Suzuki Alto
+  * Maruti Suzuki WagonR
+
+* If data is uncertain, clearly mention "approximate" instead of guessing
+
+---
+
+## ❗ OUTPUT FORMAT
+
+* Provide output in **clean HTML format (CK Editor ready)**
+* Use proper tags: `<h1> <h2> <p> <ul> <li>`
+* Do NOT include any markdown
+* Do NOT copy content from any source
+
+---
+
+## 📝 INPUT QUESTION:
+
+[PASTE YOUR QUESTION HERE]
+
+---
+
+## 🎯 GOAL:
+
+Create a blog that:
+
+* Ranks on Google
+* Is easy to understand
+* Provides real value to users
+* Builds authority for microcars.in
+
